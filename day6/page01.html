@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function text() {
+            //글자추가 버튼을 누르면 text 함수가 실행
+            result.innerHTML="박민규"
+        }
+        function img() {
+            //이미지추가 버튼을 누르면 img함수가 실행
+            result.innerHTML="<img src=img.jpg>"
+        }
+        function text2(){
+            word=document.getElementById("word").value
+            result.innerHTML="<font color=blue>" + word+"</font>"
+
+            }
+        function text3(){
+        word2=document.getElementById("word2").value
+        result2.innerHTML="<font color=blue>" + word2+"</font>"
+
+        }
+
+
+
+
+    </script>
+
+
+</head>
+<body>
+    <button style="background: red;" onclick="text()">글자추가</button>
+    <button style="background: royalblue;" onclick="img()">이미지추가</button>
+    <button style="background: greenyellow;" onclick="text2()">글자추가</button>
+    <button style="background: orange;" onclick="text3()">글자추가</button>
+    하고싶은 말 : <input type="text" id="word">
+    하고싶은 말 : <input type="text3" id="word2">
+    <hr>
+    <div id="result"></div>
+    <div id="result2"></div>
+</body>
+</html>

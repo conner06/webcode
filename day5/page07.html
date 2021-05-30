@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function plus(){
+            alert("plus함수를 사용함")
+            alert("n1 , n2를 가지고 와야함")
+
+            n1=document.getElementById("n1").value
+            alert("숫자1의 입력값은" +n1)
+            n2=document.getElementById("n2").value
+            alert("숫자1의 입력값은" +n2)
+            n11=parseInt(n1)
+            n22=parseInt(n2)
+            alert(n11+n22)
+        }
+        function login(){
+            alert("아이디를 입력하세요")
+            n3=document.getElementById("n3").value
+            alert("아이디 입력값은" +n3)
+            alert("비밀번호를 입력하세요")
+            n4=document.getElementById("n4").value
+            alert("비밀번호의 입력값은" +n4)
+        
+          
+            
+            if(n3 =="root" && n4=="1234"){ alert("로그인 성공")}
+            else{ 
+            alert("로그인 실패")}
+            }
+        function rec(){
+            alert("가로를 입력하세요")
+            n5=document.getElementById("n5").value
+            alert("가로 입력값은" +n5)
+            alert("세로를 입력하세요")
+            n6=document.getElementById("n6").value
+            alert("세로 입력값은" +n6)
+            n55=parseInt(n5)
+            n66=parseInt(n6)
+            alert(parseInt(n5)*parseInt(n6))
+
+            
+
+        }
+        function circle(){
+            r=document.getElementById("r").value
+
+            alert(3.14*parseFloat(r)*parseFloat(r))
+
+
+
+        }
+    </script>
+</head>
+<body>
+    숫자1: <input type="text" id="n1"> <br>
+    숫자2:  <input type="text" id='n2'> <br>
+    <button onclick="plus()"></button> <br> <br> <br>
+
+
+    id: <input type="text" id="n3"> <br>
+    pw: <input type="text" id="n4"> <br>
+    <button onclick="login()"></button>
+
+    가로값: <input type="text" id="n5"> <br>
+    세로값: <input type="text" id="n6"> <br>
+    <button onclick="rec()">사각형의 면적 구하기</button>
+    <hr>
+    반지름: <input type="text" id="r"> <br>
+    <button onclick="circle">원의 넓이 구하기 </button>
+</body>
+</html>
